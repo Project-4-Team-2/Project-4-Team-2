@@ -1,4 +1,4 @@
-# Project_04 - Alheimer Risks
+# Project_04 - Alzheimer Risks
 Repository for Project 4 of Data visualization bootcamp (U of T SCS)
 Project 4: Team 2 
 
