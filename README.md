@@ -8,7 +8,7 @@ Dataset link: https://www.kaggle.com/datasets/rabieelkharoua/alzheimers-disease-
 
 In this sub-project, I focused on the category of demographic including gender, age, education, and ethnicity. However, through correlation analysis, five features in the category of Cognitive and Functional Assessments were only five diagnosis-correlated features. To enhance the accuarcy of the model, I decided to add the five diagnosis-correlated featuresthe to the four chosen demographic features for machine learning.
 
-Data viuualization on Tableau can be accessed through link: 
+Data visualization on Tableau can be accessed through link: 
 
 Tableau AD factor 
 https://public.tableau.com/app/profile/yi.wen7753/viz/ADFactors/FactorsImpactonAD?
