@@ -43,13 +43,13 @@ Please follow these steps to interact with our data visualizations, dashboard an
 ------ insert screenshot of Tableau page -------
 
 1.
-   ![EduLevel](https://github.com/user-attachments/assets/8c26bb4d-f55a-4c32-8304-d95a4f54190e)
+     ![EduLevel](https://github.com/user-attachments/assets/8c26bb4d-f55a-4c32-8304-d95a4f54190e)
 
 2.
-   ![Ethnicity](https://github.com/user-attachments/assets/8431148a-99ac-4f06-aa7b-7da5733c28d6)
+     ![Ethnicity](https://github.com/user-attachments/assets/8431148a-99ac-4f06-aa7b-7da5733c28d6)
 
 3.
-   ![Age](https://github.com/user-attachments/assets/a9ab4de3-0d07-4488-bc78-b7a58733f742)
+     ![Age](https://github.com/user-attachments/assets/a9ab4de3-0d07-4488-bc78-b7a58733f742)
 
 ## Ethical Considerations ##
 
