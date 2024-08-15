@@ -8,7 +8,7 @@ Dataset: Alzheimer's Disease Dataset
 
 Dataset Source: (https://www.kaggle.com/datasets/rabieelkharoua/alzheimers-disease-dataset/data)
 
-	Libraries used: Pandas, Numpy, MatPlotLib, JSON, Flask, Sqlite, SQLAlchemy, Plotly, D3, Tableau, SkLearn, PCA
+	Libraries used: Pandas, Numpy, MatPlotLib, JSON, Sqlite, SQLAlchemy, Plotly, D3, Tableau, SkLearn, PCA
  	
   	Languages used: Python, SQL
 	
@@ -18,27 +18,27 @@ Dataset Source: (https://www.kaggle.com/datasets/rabieelkharoua/alzheimers-disea
 
 **HIGH LEVEL PROBLEM STATEMENT** 
 	
-Statement
+What are modifiable and nonmodifiable metrics that most accurately predict onset of Alzheimer’s Disease?
 
 **HYPOTHESIS** 
 
-Hypothesis
+There is no individual metric that can predict Alzheimer’s disease. 
 
 **Sub-questions covering 3 topics and a tableau dashboard:**
 
-1. dsadsadd
-2. sdsadsad
-3. asdsad
+1. Can demographic features help predict the Alzheimer’s diagnosis through correlation and statistical analysis? 
+2. Did lifestyle choices impact your likelihood of developing Alzheimer’s? 
+3. Can Medical History factors aid in prediction of your likelihood of Alzheimer's? 
 
 ## Interactive Dashboard and Machine Learning ##
 
 ### Instructions on how to use and interact with the project and Purpose ###
 
-The goal of this project ...  
+This project aims to develop a tool to identify the key factors that contribute to the onset and progression of Alzheimer's Disease. 
 
-We used Python to clean and transform data and stored it .... 
+We used Python to clean and transform data and stored it on SQL database. Data was accessed through sqlite or the downloaded csv files. Simple data visualizations were done using plotly, seaborn and Tableau. Final images were created and displayed in our Tableau dashboard. 
 
-Please follow these steps to interact with our data visualizations and dashboard: 
+Please follow these steps to interact with our data visualizations, dashboard and Machine Learning Models: 
 
 ------ insert screenshot of Tableau page -------
 
