@@ -56,14 +56,14 @@ Our data analysis can be separated into five main components:
 2. Supervised Learning Model
    > i. Navigate to "Alzheimer_SupervisedTraining" to view all the attempted supervised learning models for all features in this dataset. Our Random Tree Classification and Decision Tree models produce recall and accuracy scores >90%. We attempted RandomOverSampler from imbalanced-learn in order to randomly select samples from minority classes and adding them to the training dataset, to improve resolution and signal-to-noise ratio.
    >
-   > ii. Navigate to "Alzheimer_Demographic_MLS.ipynb" to view our Machine Learning Model for Demographics data combined with the Top 5 Features. Random Tree Classifier was able to yield recall of 98% and 90%, with accuracy at 95%.
+   > ii. Navigate to "Alzheimer_Demographic_MLS.ipynb" to view our Machine Learning Model for Demographics data combined with the five correlated features in the category of Cognitive Assessment. Random Tree Classifier was able to yield recall of 98% and 90%, with accuracy at 95%.
    > 
 3. Neural Network Machine Learning Model
    > i. Navigate to "Alzheimer_NeuralNetwork_TopFeatures" to view our Neural Network Machine Learning Model for the Top Features in our dataset (Functional Assessment, ADL, Memory Complaints, MMSE, Behavioral Problems). These top features were determined by analyzing >0.2 Spearman's Correlation Coefficients. Also in this file is the Random Tree Classifier that identifies a recall of 98% and 90% with an accuracy of 93%. This is higher, and more reliable than our Neural Network Model, which yields an accuracy of 81% and a loss of 0.47, whilst for the validation set has an accuracy of 85% with a loss of 0.38. Although the Neural Network is reliable (with generalization and low likelihood of over-fitting), we can see higher accuracy and recall with the Random Tree Classifier.
    > 
    > ii. Navigate to "Alzheimer_NeuralNetwork_All" to view a Neural Network model produced for all features in this dataset. Unfortunately, Accuracy was low and Loss high for these models, and validation also yielded unreliability if all features were used.
    >
-   > iii. Neural Network model for demographic features can be found in "Alzheimer_Demographic_DL.ipynb"
+   > iii. Neural Network modeling for demographic features can be found in "Alzheimer_Demographic_DL.ipynb". 
 
 4. Please view our Presentation Powerpoint at "Project 04 _ Team 2 Powerpoint"
    
