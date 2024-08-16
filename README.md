@@ -30,26 +30,45 @@ There is no individual metric that can predict Alzheimer’s disease.
 2. Did lifestyle choices impact your likelihood of developing Alzheimer’s? 
 3. Can Medical History factors aid in prediction of your likelihood of Alzheimer's? 
 
-## Interactive Dashboard and Machine Learning ##
-
-### Instructions on how to use and interact with the project and Purpose ###
+### Purpose ###
 
 This project aims to develop a tool to identify the key factors that contribute to the onset and progression of Alzheimer's Disease. 
 
 We used Python to clean and transform data and stored it on SQL database. Data was accessed through sqlite or the downloaded csv files. Simple data visualizations were done using plotly, seaborn and Tableau. Final images were created and displayed in our Tableau dashboard. 
 
-Please follow these steps to interact with our data visualizations, dashboard and Machine Learning Models: 
+## Workflow ## 
 
------- insert screenshot of Tableau page -------
+![FlowChart](https://github.com/user-attachments/assets/9ee4b29d-e659-42bf-862b-d4943cff7db6)
 
-1.
-     ![EduLevel](https://github.com/user-attachments/assets/8c26bb4d-f55a-4c32-8304-d95a4f54190e)
+## Interactive Dashboard and Machine Learning ##
 
-2.
-     ![Ethnicity](https://github.com/user-attachments/assets/8431148a-99ac-4f06-aa7b-7da5733c28d6)
+Please follow these steps to interact with our data visualizations, dashboard and Machine Learning Models:
 
-3.
-     ![Age](https://github.com/user-attachments/assets/a9ab4de3-0d07-4488-bc78-b7a58733f742)
+Our data analysis can be separated into five main components: 
+
+1. Unsupervised Learning Model
+   > i. Please navigate to "Alzheimer_UnsupervisedTraining _All" to view unsupervised training completed for all features in this dataset.
+   > ii. Please navigate to "Alzheimer_UnsupervisedTraining _Lifestyle" to view unsupervised training completed for lifestyle features in this dataset. 
+2. Supervised Learning Model
+   > i. Navigate to "Alzheimer_SupervisedTraining" to view all the attempted supervised learning models for all features in this dataset. Our Random Tree Classification and Decision Tree models produce recall and accuracy scores >90%. We attempted RandomOverSampler from imbalanced-learn in order to randomly select samples from minority classes and adding them to the training dataset, to improve resolution and signal-to-noise ratio.
+3. Neural Network Machine Learning Model
+   > i. Navigate to "Alzheimer_NeuralNetwork_TopFeatures" to view our Neural Network Machine Learning Model for the Top Features in our dataset (Functional Assessment, ADL, Memory Complaints, MMSE, Behavioral Problems). These top features were determined by analyzing >0.2 Spearman's Correlation Coefficients. Also in this file is the Random Tree Classifier that identifies a recall of 98% and 90% with an accuracy of 93%. This is higher, and more reliable than our Neural Network Model, which yields an accuracy of 81% and a loss of 0.47, whilst for the validation set has an accuracy of 85% with a loss of 0.38. Although the Neural Network is reliable (with generalization and low likelihood of over-fitting), we can see higher accuracy and recall with the Random Tree Classifier.
+   > ii. Navigate to "Alzheimer_NeuralNetwork_All" to view a Neural Network model produced for all features in this dataset. Unfortunately, Accuracy was low and Loss high for these models, and validation also yielded unreliability if all features were used. 
+4. Supplementary Information and Analyses
+   > i. Navigate to "Alzheimer_CombinedAnalysis" to view our Machine Learning Model for Demographics data combined with the Top 5 Features. Random Tree Classifier was able to yield recall of 98% and 90%, with accuracy at 95%.
+   > ii. Please view our Presentation Powerpoint at "Project 04 _ Team 2 Powerpoint"
+5. Preliminary Data Visualization (Category based)
+   > i. Navigate to "alzheimer_analysis_pre" to view data cleaning and preliminary visualizations for BMI, Physical Activity, Diet Quality, Sleep Quality and Alcohol Consumption using Seaborn and Plotly. This is the base file we used to produce the "alzheimer_clean.csv" file for later analysis.
+   > ii. Navigate to "Alzheimer_DemographicsAnalysis" to view visualizations produced using Plotly, dash and Seaborn. This file utilized SQlite to store the data on a database. 
+   > iii. Please navigate to branch "Ria" to view visualizations for Medical History related features.
+   > iv. Please navigate to branch "annabranch" to view visualizations and exploratory supervised learning models for features under the "Lifestyle Choices" category.
+
+### Please view our Tableau Dashboard as linked below $$$
+
+![EduLevel](https://github.com/user-attachments/assets/8c26bb4d-f55a-4c32-8304-d95a4f54190e)
+
+LINK: https://public.tableau.com/app/profile/yi.wen7753/viz/ADFactors/FactorsImpactonAD?publish=yes
+LINK: https://public.tableau.com/app/profile/yi.wen7753/viz/Corr_visual/Corr_diagnosis_features?publish=yes
 
 ## Ethical Considerations ##
 
@@ -72,4 +91,5 @@ year={2024}
 
 ## Code References ##
 
-JLKJLKJSLJs
+https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.RandomOverSampler.html
+https://seaborn.pydata.org/
