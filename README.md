@@ -69,7 +69,7 @@ Our data analysis can be separated into five main components:
    > 
    > iv. Please navigate to branch "annabranch" to view visualizations and exploratory supervised learning models for features under the "Lifestyle Choices" category.
 
-### Please view our Tableau Dashboard as linked below $$$
+### Please view our Tableau Dashboard as linked below ###
 
 ![EduLevel](https://github.com/user-attachments/assets/8c26bb4d-f55a-4c32-8304-d95a4f54190e)
 
