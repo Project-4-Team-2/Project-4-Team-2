@@ -53,7 +53,11 @@ Please follow these steps to interact with our data visualizations, dashboard an
 
 ## Ethical Considerations ##
 
-SADSADD
+1. Copy right - The dataset was obtained from kaggle website with CC BY 4.0 license which allows users to share and adapt the dataset for any purpose with no issue of copywrite.
+
+2. Privacy and Data Protection - Personal information of patients and doctors are protected in this dataset
+   
+3. Distribution of Benefits - The dataset used in this project is for education purposes. The dataset was analyzed and presented publicly and transparently which can bring pulics' attention to diagnosis of Alzheimer's disease.
 
 ## Data Source References ##
 
