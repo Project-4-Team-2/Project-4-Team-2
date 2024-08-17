@@ -50,20 +50,27 @@ Our data analysis can be separated into five main components:
    > i. Please navigate to "Alzheimer_UnsupervisedTraining _All" to view unsupervised training completed for all features in this dataset.
    > 
    > ii. Please navigate to "Alzheimer_UnsupervisedTraining _Lifestyle" to view unsupervised training completed for lifestyle features in this dataset.
+   >
+   > iii. Please navigate to "Alzheimer_analysis_EDA_MLU.ipynb" to view unsupervised training completed for demographic features in this dataset.
+   > 
 2. Supervised Learning Model
    > i. Navigate to "Alzheimer_SupervisedTraining" to view all the attempted supervised learning models for all features in this dataset. Our Random Tree Classification and Decision Tree models produce recall and accuracy scores >90%. We attempted RandomOverSampler from imbalanced-learn in order to randomly select samples from minority classes and adding them to the training dataset, to improve resolution and signal-to-noise ratio.
+   >
+   > ii. Navigate to "Alzheimer_Demographic_MLS.ipynb" to view supervised learning models for features of demographic category. The accuracy of prediction was increased to 95% by combing five relevant features. 
    > 
 3. Neural Network Machine Learning Model
    > i. Navigate to "Alzheimer_NeuralNetwork_TopFeatures" to view our Neural Network Machine Learning Model for the Top Features in our dataset (Functional Assessment, ADL, Memory Complaints, MMSE, Behavioral Problems). These top features were determined by analyzing >0.2 Spearman's Correlation Coefficients. Also in this file is the Random Tree Classifier that identifies a recall of 98% and 90% with an accuracy of 93%. This is higher, and more reliable than our Neural Network Model, which yields an accuracy of 81% and a loss of 0.47, whilst for the validation set has an accuracy of 85% with a loss of 0.38. Although the Neural Network is reliable (with generalization and low likelihood of over-fitting), we can see higher accuracy and recall with the Random Tree Classifier.
    > 
-   > ii. Navigate to "Alzheimer_NeuralNetwork_All" to view a Neural Network model produced for all features in this dataset. Unfortunately, Accuracy was low and Loss high for these models, and validation also yielded unreliability if all features were used. 
+   > ii. Navigate to "Alzheimer_NeuralNetwork_All" to view a Neural Network model produced for all features in this dataset. Unfortunately, Accuracy was low and Loss high for these models, and validation also yielded unreliability if all features were used.
+   >
+   > iii. Naviage to "Alzheimer_Demographic_DL.ipynb" to view Neural Network model for demographic features in the dataset. 
 
 4. Please view our Presentation Powerpoint at "Project 04 _ Team 2 Powerpoint"
    
 5. Preprocessing and Data Visualization (Category based)
    > i. Navigate to "alzheimer_analysis_pre" to view data cleaning and preliminary visualizations for BMI, Physical Activity, Diet Quality, Sleep Quality and Alcohol Consumption using Seaborn and Plotly. This is the base file we used to produce the "alzheimer_clean.csv" file for later analysis. Additional preliminary processing for these categories can be found under branch "Yumai."
    > 
-   > ii. Navigate to "Alzheimer_Demographic_Visual.ipynb" to view visualizations produced using Plotly, dash and Seaborn. This file utilized SQlite to store the data on a SQL database. Additional Demographic preliminary work can be found under branch Yi. 
+   > ii. Navigate to "Alzheimer_Demographic_Visual.ipynb" to view visualizations produced using matplotlib, Plotly dash and Seaborn. This file utilized SQlite to store the data on a SQL database. Additional Demographic work can be found under branch Yi. 
    > 
    > iii. Please navigate to branch "Ria" to view visualizations for Medical History related features.
    > 
