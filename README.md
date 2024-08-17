@@ -51,7 +51,7 @@ Our data analysis can be separated into five main components:
    > 
    > ii. Please navigate to "Alzheimer_UnsupervisedTraining _Lifestyle" to view unsupervised training completed for lifestyle features in this dataset.
    >
-   > iii. Please navigate to "Alzheimer_analysis_EDA_MLU.ipynb" to view unsupervised training completed for demographic features in this dataset.
+   > iii. Please navigate to "Alzheimer_Demographic_MLU.ipynb" to view unsupervised training completed for demographic features in this dataset.
    > 
 2. Supervised Learning Model
    > i. Navigate to "Alzheimer_SupervisedTraining" to view all the attempted supervised learning models for all features in this dataset. Our Random Tree Classification and Decision Tree models produce recall and accuracy scores >90%. We attempted RandomOverSampler from imbalanced-learn in order to randomly select samples from minority classes and adding them to the training dataset, to improve resolution and signal-to-noise ratio.
