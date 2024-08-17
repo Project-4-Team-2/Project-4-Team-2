@@ -34,7 +34,7 @@ There is no individual metric that can predict Alzheimer’s disease.
 
 This project aims to develop a tool to identify the key factors that contribute to the onset and progression of Alzheimer's Disease. 
 
-We used Python to clean and transform data and stored it on SQL database. Data was accessed through sqlite or the downloaded csv files. Simple data visualizations were done using plotly, seaborn and Tableau. Final images were created and displayed in our Tableau dashboard. 
+We used Python to clean and transform data and stored it on the SQL database. Data was accessed through sqlite or the downloaded csv files. Simple data visualizations were done using plotly, seaborn and Tableau. Final images were created and displayed in our Tableau dashboard. 
 
 ## Workflow ## 
 
@@ -50,33 +50,24 @@ Our data analysis can be separated into five main components:
    > i. Please navigate to "Alzheimer_UnsupervisedTraining _All" to view unsupervised training completed for all features in this dataset.
    > 
    > ii. Please navigate to "Alzheimer_UnsupervisedTraining _Lifestyle" to view unsupervised training completed for lifestyle features in this dataset.
-   >
-   > iii. Unsupervised machine learning for demographic features can be found in "Alzheimer_Demographic_MLU.ipynb".
-   > 
 2. Supervised Learning Model
    > i. Navigate to "Alzheimer_SupervisedTraining" to view all the attempted supervised learning models for all features in this dataset. Our Random Tree Classification and Decision Tree models produce recall and accuracy scores >90%. We attempted RandomOverSampler from imbalanced-learn in order to randomly select samples from minority classes and adding them to the training dataset, to improve resolution and signal-to-noise ratio.
-   >
-   > ii. Navigate to "Alzheimer_Demographic_MLS.ipynb" to view our Machine Learning Model for Demographics data combined with the five correlated features in the category of Cognitive Assessment. Random Tree Classifier was able to yield recall of 98% and 90%, with accuracy at 95%.
    > 
 3. Neural Network Machine Learning Model
    > i. Navigate to "Alzheimer_NeuralNetwork_TopFeatures" to view our Neural Network Machine Learning Model for the Top Features in our dataset (Functional Assessment, ADL, Memory Complaints, MMSE, Behavioral Problems). These top features were determined by analyzing >0.2 Spearman's Correlation Coefficients. Also in this file is the Random Tree Classifier that identifies a recall of 98% and 90% with an accuracy of 93%. This is higher, and more reliable than our Neural Network Model, which yields an accuracy of 81% and a loss of 0.47, whilst for the validation set has an accuracy of 85% with a loss of 0.38. Although the Neural Network is reliable (with generalization and low likelihood of over-fitting), we can see higher accuracy and recall with the Random Tree Classifier.
    > 
-   > ii. Navigate to "Alzheimer_NeuralNetwork_All" to view a Neural Network model produced for all features in this dataset. Unfortunately, Accuracy was low and Loss high for these models, and validation also yielded unreliability if all features were used.
-   >
-   > iii. Neural Network modeling for demographic features can be found in "Alzheimer_Demographic_DL.ipynb". 
+   > ii. Navigate to "Alzheimer_NeuralNetwork_All" to view a Neural Network model produced for all features in this dataset. Unfortunately, Accuracy was low and Loss high for these models, and validation also yielded unreliability if all features were used. 
 
 4. Please view our Presentation Powerpoint at "Project 04 _ Team 2 Powerpoint"
    
-6. Preprocessing and Data Visualization (Category based)
-   > i. Navigate to "alzheimer_analysis_pre" to view data cleaning and preliminary visualizations for BMI, Physical Activity, Diet Quality, Sleep Quality and Alcohol Consumption using Seaborn and Plotly. This is the base file we used to produce the "alzheimer_clean.csv" file for later analysis.
+5. Preprocessing and Data Visualization (Category based)
+   > i. Navigate to "alzheimer_analysis_pre" to view data cleaning and preliminary visualizations for BMI, Physical Activity, Diet Quality, Sleep Quality and Alcohol Consumption using Seaborn and Plotly. This is the base file we used to produce the "alzheimer_clean.csv" file for later analysis. Additional preliminary processing for these categories can be found under branch "Yumai."
    > 
-   > ii. Navigate to "Alzheimer_Demographic_Visual.ipynb" to view visualizations produced using Plotly, dash and Seaborn. This file utilized SQlite to store the data on a SQL database.
+   > ii. Navigate to "Alzheimer_Demographic_Visual.ipynb" to view visualizations produced using Plotly, dash and Seaborn. This file utilized SQlite to store the data on a SQL database. Additional Demographic preliminary work can be found under branch Yi. 
    > 
    > iii. Please navigate to branch "Ria" to view visualizations for Medical History related features.
    > 
-   > iv. Please navigate to branch "annabranch" to view visualizations and exploratory supervised learning models for features under the "Lifestyle Choices" category.
-   >
-   > v. Data visualization including Tableau processing, unsupervised machine learning, supervised machine learning and neural network for "Demographic" category can be found in the branch "Yi".
+   > iv. Please navigate to branch "annaBranch" to view visualizations and exploratory supervised learning models for features under the "Lifestyle Choices" category.
 
 ### Please view our Tableau Dashboard as linked below ###
 
@@ -88,11 +79,11 @@ LINK: https://public.tableau.com/app/profile/yi.wen7753/viz/Corr_visual/Corr_dia
 
 ## Ethical Considerations ##
 
-1. Copy right - The dataset was obtained from kaggle website with CC BY 4.0 license which allows users to share and adapt the dataset for any purpose with no issue of copywrite.
-
-2. Privacy and Data Protection - Personal information of patients and doctors are protected in this dataset
+1. Copyright - This dataset was obtained from the Kaggle website with CC BY 4.0 license, which allows users to share and adapt the dataset for any purpose with no associated copyright issues.
    
-3. Distribution of Benefits - The dataset used in this project is for education purposes. The dataset was analyzed and presented publicly and transparently which can bring pulics' attention to diagnosis of Alzheimer's disease.
+2. Privacy and Data Protection - Patient Private Health Information (PHI) and Medical Doctor information was intentionally anonymized in this dataset for the protection of patient and medical practitioner privacy. 
+   
+3. Distribution of Benefits - The dataset used in this project is for education purposes. The dataset was analyzed and presented publicly and transparently in order to better represent the risks and complications associated with the Alzheimer Disease. 
 
 ## Data Source References ##
 
@@ -110,3 +101,11 @@ year={2024}
 https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.RandomOverSampler.html
 
 https://seaborn.pydata.org/
+
+### Supplementary Analyses and Additional Files Directory ###
+-  "Alzheimer_Demographic_MLU.ipynb" includes in-process unsupervised machine learning for demographic features
+-   "Alzheimer_Demographic_MLS.ipynb" contains a Machine Learning Model for Demographics data combined with the top five features correlated with Alzheimer diagnosis. Random Tree Classifier for combination analysis was able to yield recall of 98% and 90%, with an accuracy of 95%.
+-   "Alzheimer_Demographic_DL.ipynb" contains Neural Network modeling for demographic features
+-   The WorkFlow chart embedded above can be found at "FlowChart.png."
+-   For ease of deployment, neural network models have been saved as "NN_AllFeatures_model.h5" and "NN_top5Features_model.h5."
+
